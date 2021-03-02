@@ -28,8 +28,8 @@ public class BOJ_S2_4307_개미 {
 			for(int i = 0; i < num; i++) {
 				left = input[i];
 				right = L - input[i];
-				tmin = left < right ? left : right;
-				tmax = left <= right ? right: left; 
+				tmin = Math.min(left, right);
+				tmax = Math.max(left, right); 
 				min = Math.max(min, tmin);
 				max = Math.max(max,tmax);
 			}

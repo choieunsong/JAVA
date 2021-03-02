@@ -15,13 +15,11 @@ import java.util.Queue;
 
 public class BOJ_S1_1992 {
 	static int[][] map;
-	static Queue<Character> queue; 
 	
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(in.readLine());
 		map = new int[N][N];
-		queue = new LinkedList<Character>();
 		
 		for(int i=0; i<N; i++) {
 			String line = in.readLine().trim();
