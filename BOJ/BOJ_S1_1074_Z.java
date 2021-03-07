@@ -45,7 +45,6 @@ public class BOJ_S1_1074_Z {
 				System.out.println(cnt);
 				break;
 			}
-			
 		}	
 	}
 }
