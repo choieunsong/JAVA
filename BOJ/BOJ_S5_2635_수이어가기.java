@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Collections;
 import java.util.LinkedList;
 
-public class BOJ_S5_2635_수이어가기 {
+public class BOJ_S5_2635_수이어가기{
 	static int max;
 	static LinkedList<Integer> result;
 	static LinkedList<Integer> arr;
