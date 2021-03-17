@@ -52,16 +52,16 @@ public class BOJ_S1_6118_숨바꼭질 {
 			q.poll();
 			
 			int size = adj[cur].size();
-			boolean noVisit = false;
+			boolean visit = false;
 			for(int i=0; i <size; i++) {
 				int next = adj[cur].get(i);
 				if(!visited[next]) {
 					visited[next] = true;
-					noVisit = true;
+					visit = true;
 					q.offer(new int[] {next, dist+1});
 				}
 			}
-			if(!noVisit) {
+			if(!visit) {
 				if(dist > maxDist) {
 					maxDist = dist;
 					idx = cur; 
