@@ -12,4 +12,4 @@
 
 전형적인 유니온 파인드 문제였다.
 
-최적화에서 rank 배열을 만들어서 path compression을 할 수도 있다.
+최적화에서 rank 배열을 만들어서 path compression을 할 수도 있다.$$
