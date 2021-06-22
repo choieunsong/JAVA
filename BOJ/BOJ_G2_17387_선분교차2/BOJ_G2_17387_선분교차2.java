@@ -32,9 +32,9 @@ public class BOJ_G2_17387_선분교차2 {
         int exL1 = ccw(A, B, C) * ccw(A, B, D);
         int exL2 = ccw(C, D, A) * ccw(C, D, B);
         if(exL1 == 0 && exL2 ==0){
-            if(A.x > B.x || A.y > B.y)  swap(A, B);
-            if(C.x > D.x || C.y > D.y)  swap(C, D);
-            if((A.x <= D.x && B.x >= C.x) || ( A.y <= D.y && B.y >= C.y))   return 1;
+            if(Math.min(A.x, B.x) <= Math.max(C.x, D.x) && Math.max(A.x,B.x) >= Math.min(C.x, D.x)
+            && Math.min(A.y, B.y) <= Math.max(C.y, D.y) && Math.max(A.y,B.y) >= Math.min(C.y, D.y))
+                return 1;
             else    return 0;
         } else if(exL1 <= 0 && exL2 <= 0){
             return 1;
